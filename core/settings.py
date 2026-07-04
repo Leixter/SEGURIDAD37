@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'corsheaders',# <-- Agrega esta línea (no olvides la coma)
     'api',  # <-- Agrega esta línea (no olvides la coma)
 ]
@@ -83,7 +84,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'SecureCoreDB',
-        'HOST': 'DESKTOP-T979ENV\\MSSQLSERVER03', 
+        'HOST': 'LAPTOP-P8I51H5V', 
         'PORT': '',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
