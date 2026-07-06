@@ -84,7 +84,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'SecureCoreDB',
-        'HOST': 'LAPTOP-P8I51H5V', 
+        'HOST': '.', 
         'PORT': '',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',

@@ -18,6 +18,7 @@ urlpatterns = [
     path('riesgos/<int:pk>/', views.detalle_riesgo),
     path('catalogo-iso/', views.lista_catalogo_iso),
     path('controles-empresa/', views.lista_controles_empresa),
+    path('controles-empresa/<int:pk>/', views.detalle_control_empresa),
     path('tratamientos/', views.lista_tratamientos),
     path('tratamientos/<int:pk>/', views.detalle_tratamiento),
 ]

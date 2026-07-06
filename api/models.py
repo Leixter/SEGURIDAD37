@@ -149,6 +149,7 @@ class ControlEmpresa(models.Model):
         max_digits=5, decimal_places=2, null=True, blank=True
     )
     fecha_registro = models.DateTimeField(default=timezone.now)
+    fecha_modificacion = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     class Meta:
         db_table = "Controles_Empresa"
@@ -222,6 +223,7 @@ class Riesgo(models.Model):
     nivel_vulnerabilidad = models.IntegerField()
     score_inherente = models.IntegerField(null=True, blank=True)
     fecha_registro = models.DateTimeField(default=timezone.now)
+    fecha_modificacion = models.DateTimeField(auto_now=True, null=True, blank=True)
 
     class Meta:
         db_table = "Riesgos"
@@ -264,6 +266,7 @@ class TratamientoRiesgo(models.Model):
     )
     observaciones = models.TextField(null=True, blank=True)
     fecha_actualizacion = models.DateTimeField(default=timezone.now)
+    fecha_modificacion = models.DateTimeField(auto_now=True, null=True, blank=True)
     es_activo = models.BooleanField(default=True)
 
     class Meta:
